@@ -1,0 +1,77 @@
+/* Poppins */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+/* Open sans */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.additional__img {
+  max-width: 550px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.additional__img img {
+  width: 100%;
+}
+
+.additional__container {
+  background-color: hsl(207, 100%, 98%);
+  padding: 1.5rem 0;
+}
+
+.additional__paragraph {
+  padding: 1.2rem;
+  word-break: break-all;
+  text-align: center;
+}
+
+.additional__paragraph h1{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.additional__paragraph p {
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 400;
+}
+
+.additional__bg-curve--top img{
+  width: 100%;
+  max-height: 100px;
+  margin-bottom: -5px;
+  background-color: white;
+}
+
+.additional__bg-curve--bot img{
+  width: 100%;
+  max-height: 100px;
+  background-color: white;
+}
+
+.flowing__container {
+  padding: 1.5rem 0;
+}
+
+.user__container {
+  background-color: hsl(207, 100%, 98%);
+  padding: 1.5rem 0;
+}
+
+.additional__btn {
+  text-align: center;
+  padding: 1.5rem 0 10rem 0;
+}
+
+.additional__btn button{
+  padding: 0.8rem 2.5rem;
+  border: none;
+  border-radius: 20px;
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 5px 12px 0px #969696;
+}
