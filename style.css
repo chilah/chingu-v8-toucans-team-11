@@ -121,15 +121,23 @@ body {
 
 @media (min-width: 992px) {
   .grow__container, .flowing__container, .user__container {
-    grid-template-columns: 400px 400px;
+    grid-template-columns: minmax(420px, 550px) minmax(420px, 550px);
     grid-gap: 2rem;
   }
 
   .additional__img {
-    width: 350px;
+    width: 400px;
   }
 
   .additional__paragraph {
-    width: 350px;
+    width: 400px;
+  }
+  
+  .additional__paragraph h1 {
+    font-size: 1.8rem;
+  }
+  
+  .additional__paragraph p {
+    font-size: 1.2rem;
   }
 }
