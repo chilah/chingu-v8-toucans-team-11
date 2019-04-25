@@ -4,83 +4,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
-  <title>v8-toucans-team-11</title>
-  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Huddle landing page with alternating sections">
+  <meta name="author" content="toucans-team-11">
+  <link rel="stylesheet" href="./css/style.css" type="text/css">
+  <link rel="shortcut icon" href="./favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins" rel="stylesheet">
+  <title>Huddle Landing Page</title>
 </head>
 
 <body>
-  <div class="addtional">
-    <!-- Grow Section -->
-    <div class="additional__grow">
+  <header>
 
-      <div class="additional__bg-curve--top">
-        <img src="./images/bg-section-top-mobile-1.svg" alt="">
+  </header>
+  <main>
+    <section class="introduction">
+      <!-- this section will contain the landing section(just below header) -->
+      <div class="introduction-container">
+        <h1 class="main-heading">build the community your fans will love</h1>
+        <p>Huddle re-imagines the way we build communities. You have a <br> voice, but so does your audience. Create connections with your <br> users as you engage in genuine discussion.</p>
+        <a href="#" class="button-anchor main-button">Get Started For Free</a>
       </div>
-
-      <div class="grow__container">
-        <div class="additional__img">
-          <img src="./images/illustration-grow-together.svg" alt="grow together">
-        </div>
-
-        <div class="additional__paragraph">
-          <h1>Grow Together</h1>
-          <p>Generate meaingful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.</p>
-        </div>
-      </div>
-
-      <div class="additional__bg-curve--bot">
-        <img src="./images/bg-section-bottom-mobile-1.svg" alt="">
-      </div>
-
+    </section>
+    <div class="screen-mockup">
+      <!-- will use this container to settle the mockup image -->
+      <img id="mockups" src="./images/screen-mockups.svg" alt="">
     </div>
-
-    <!-- Flowing Section -->
-    <div class="addintional__flowing">
-      <div class="flowing__container">
-
-        <div class="additional__img">
-          <img src="./images/illustration-flowing-conversation.svg" alt="">
+    <!-- Statistics section -->
+    <section class="statistics">
+      <div class="statistics-container">
+        <div class="statistics__compartment">
+          <img class="statistics__img" src="./images/icon-communities.svg" alt="">
+          <p class="statistics__claim">1.4k+</p>
+          <p class="statistics__faded">communities Formed</p>
         </div>
-
-        <div class="additional__paragraph">
-          <h1>Flowing Conversations</h1>
-          <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads is just-in-time loading for a more natural flow.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- User section -->
-    <div class="additional__user">
-
-      <div class="additional__bg-curve--top">
-        <img src="./images/bg-section-top-mobile-2.svg" alt="">
-      </div>
-
-      <div class="user__container">
-        <div class="additional__img">
-          <img src="./images/illustration-your-users.svg" alt="">
-        </div>
-
-        <div class="additional__paragraph">
-          <h1>Your Users</h1>
-          <p>It take no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting imediately.</p>
+        <div class="statistics__compartment">
+          <img class="statistics__img" src="./images/icon-messages.svg" alt="">
+          <p class="statistics__claim">2.7m+</p>
+          <p class="statistics__faded statistics__faded--center">Messages Sent</p>
         </div>
       </div>
-
-      <div class="additional__bg-curve--bot">
-          <img src="./images/bg-section-bottom-mobile-2.svg" alt="">
+    </section>
+    <!-- Additional section -->
+    <section class="addtional">
+      <!-- Grow Section -->
+      <div class="additional__grow">
+        <div class="additional__bg-curve--top">
+          <img src="./images/bg-section-top-mobile-1.svg" alt="">
+        </div>
+        <div class="grow__container">
+          <div class="additional__img">
+            <img src="./images/illustration-grow-together.svg" alt="grow together">
+          </div>
+          <div class="additional__paragraph">
+            <h1>Grow Together</h1>
+            <p>Generate meaingful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.</p>
+          </div>
+        </div>
+        <div class="additional__bg-curve--bot">
+          <img src="./images/bg-section-bottom-mobile-1.svg" alt="">
+        </div>
       </div>
-    </div>
+      <!-- Flowing Section -->
+      <div class="addintional__flowing">
+        <div class="flowing__container">
+          <div class="additional__img">
+            <img src="./images/illustration-flowing-conversation.svg" alt="">
+          </div>
+          <div class="additional__paragraph">
+            <h1>Flowing Conversations</h1>
+            <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads is just-in-time loading for a more natural flow.</p>
+          </div>
+        </div>
+      </div>
+      <!-- User section -->
+      <div class="additional__user">
+        <div class="additional__bg-curve--top">
+          <img src="./images/bg-section-top-mobile-2.svg" alt="">
+        </div>
+        <div class="user__container">
+          <div class="additional__img">
+            <img src="./images/illustration-your-users.svg" alt="">
+          </div>
+          <div class="additional__paragraph">
+            <h1>Your Users</h1>
+            <p>It take no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting imediately.</p>
+          </div>
+        </div>
+        <div class="additional__bg-curve--bot">
+            <img src="./images/bg-section-bottom-mobile-2.svg" alt="">
+        </div>
+      </div>
+      <!-- Get start button -->
+      <div class="additional__btn">
+        <h1>Ready To Build Your Community?</h1>
+        <button><a href="#">Get Started For Free</a></button>
+      </div>
+    </section>
+  </main>
 
-    <!-- Get start button -->
-    <div class="additional__btn">
-      <h3>Ready To Build Your Community?</h3>
-      <button><a href="#">Get Started For Free</a></button>
-    </div>
-
-  </div>
 </body>
 
 </html>

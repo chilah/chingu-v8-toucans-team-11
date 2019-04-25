@@ -1,0 +1,336 @@
+/* Creating some variables */
+:root {
+  --heading-font: 'Poppins';
+  --pink: hsl(322,100%,66%);
+  --heading-color: hsl(207,100%,8%);
+  --body-color: hsl(192, 100%, 9%);
+}
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.introduction-container {
+  text-align: center;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 8rem auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.main-heading {
+  font-family: var(--heading-font, sans-serif);
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  line-height: normal;
+  padding: 0;
+  margin-bottom: 0.1rem;
+}
+.introduction-container p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--body-color);
+  -ms-flex-preferred-size: content;
+      flex-basis: content;
+}
+.button-anchor {
+  text-decoration: none;
+  border: 1px solid hsl(322,100%,66%);
+  border-radius: 20px;
+  color: hsl(322,100%,66%);
+  padding: 0.5rem 1.5rem;
+  margin-right: 4rem;
+}
+.main-button {
+  background-color: var(--pink);
+  color: #fff;
+  font-weight: 700;
+  padding: 1.25rem 6rem;
+  border-radius: 30px;
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  margin-left: 3rem;
+  min-width: 0;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+}
+/* ............. mockup screen section, just below the landing section....... */
+.screen-mockup {
+  /* min-height: 85vh; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+#mockups {
+  min-width: 0;
+  -ms-flex-preferred-size: 65vw;
+      flex-basis: 65vw;
+  padding: 0 auto;
+}
+/* Statistics section */
+.statistics-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 55vh;
+  width: 94vw;
+}
+/* need to reduce size of image */
+.statistics__img {
+  max-width: 15%;
+}
+.statistics__img:first-child {
+  max-width: 20%;
+}
+/* now to work on the styles of things inside container */
+.statistics__claim {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 0;
+  margin-top: 4rem;
+  margin-bottom: 3.5rem;
+}
+.statistics__faded {
+  color: var(--body-color);
+  font-size: 1.1rem;
+  opacity: .6;
+
+}
+.statistics__faded--center {
+  margin-left: 2.5rem;
+}
+/* Media Queries */
+@media (max-width: 882px) {
+  #mockups {
+    -ms-flex-preferred-size: 78vw;
+        flex-basis: 78vw;
+  }
+  .main-heading {
+    min-width: 0;
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  .introduction-container p  {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    text-align: justify;
+  }
+  .introduction-container p br {
+    display: none;
+  }
+  .button-anchor {
+    margin-right: 1rem;
+    margin-left: auto;
+  }
+  .main-button {
+    margin-right: auto;
+  }
+}
+@media (max-width: 550px) {
+  .statistics-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+
+  }
+  .statistics__img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .statistics {
+    margin: 10rem auto auto auto;
+  }
+  .statistics__compartment:first-child {
+    margin-bottom: 5rem;
+  }
+}
+@media (max-width: 520px) {
+  .main-button {
+    padding: 1.25rem 4rem;
+  }
+}
+@media (max-width: 400px) {
+  .main-button {
+    padding: 1rem 2rem;
+  }
+}
+
+/* Additional section - Zank part */
+
+.additional__img {
+  width: 250px;
+  margin: auto;
+  padding: 1.5rem;
+}
+
+.additional__img img {
+  width: 100%;
+}
+
+.grow__container {
+  background-color: hsl(207, 100%, 98%);
+  padding: 1.5rem 0;
+}
+
+.additional__paragraph {
+  padding: 1.2rem;
+  text-align: center;
+  max-width: 450px;
+  margin: auto;
+  word-wrap: break-all;
+}
+
+.additional__paragraph h1{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.additional__paragraph p {
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 400;
+}
+
+.additional__bg-curve--top img{
+  width: 100%;
+  max-height: 150px;
+  margin-bottom: -5px;
+  background-color: white;
+}
+
+.additional__bg-curve--bot img{
+  width: 100%;
+  max-height: 150px;
+  background-color: white;
+}
+
+.flowing__container {
+  padding: 1.5rem 0;
+}
+
+.user__container {
+  background-color: hsl(207, 100%, 98%);
+  padding: 1.5rem 0;
+}
+
+.additional__btn {
+  text-align: center;
+  padding: 1.5rem 0 10rem 0;
+  font-family: 'Open sans', sans-serif;
+}
+
+.additional__btn button{
+  padding: 0.8rem 2.5rem;
+  border: none;
+  border-radius: 30px;
+  background-color: hsl(322, 100%, 66%);
+  box-shadow: 0 2px 10px 0px #969696;
+  cursor: pointer;
+}
+
+.additional__btn button a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: 'Open sans', sans-serif;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+  .grow__container, .flowing__container, .user__container {
+    display: grid;
+    grid-template-columns: 350px 350px;
+    justify-content: center;
+    grid-gap: 1rem;
+  }
+
+  .additional__img {
+    width: 300px;
+    order: 1;
+  }
+
+  .additional__paragraph {
+    align-self: center;
+    justify-self: center;
+    width: 300px;
+  }
+  .additional__paragraph h1 {
+    text-align: left;
+    font-size: 1.5rem;
+  }
+
+  .additional__paragraph p {
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  .flowing__container .additional__img { 
+    order: 0
+  }
+
+  .additional__btn button {
+    width: 300px;
+    height: 60px;
+  }
+
+  .additional__btn a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .grow__container, .flowing__container, .user__container {
+    grid-template-columns: minmax(420px, 550px) minmax(420px, 550px);
+    grid-gap: 10rem;
+  }
+
+  .additional__img {
+    width: 400px;
+  }
+
+  .additional__paragraph {
+    width: 400px;
+  }
+  
+  .additional__paragraph h1 {
+    font-size: 1.8rem;
+  }
+  
+  .additional__paragraph p {
+    font-size: 1.2rem;
+  }
+}
